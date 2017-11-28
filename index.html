@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yo bro</title>
+</head>
+<body>
+<body style="background-color:#BBCBD2">
+	<header>
+		<div class="nav">
+			<ul>
+				<li class="home">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="news">
+					<A HREF="News.html">News</A>
+				</li>
+				<li class="shop">
+					<a href="Shop.html">Shop</a>
+				</li>
+				<li class="about">
+					<a href="#">About</a>
+				</li>
+				<li class="contact">
+					<a href="#">Contact</a>
+				</li>
+				<li class="server">
+					<a href="#">Server</a>
+				</li>
+			</ul>
+		</div>
+
+
+
+
+<?php
+
+	include_once("data.php");
+
+	foreach($data as $key => $value) {
+	echo"    <article>
+		<h1>" . $value["title"] . "</h1>
+		<h2>" . $value["author"] . "</h2>
+		<p>" . $value["message"] . "</p>
+	</article>";
+	}
+?>
+
+</body>
+</html>
